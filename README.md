@@ -15,5 +15,7 @@ Method:
 5. Now vectorize each numpy array. We achieved this using tfidfVectorizer.
 6. Now we train each movie genre model using BernoulliNB and predict all the possible genres for the given plot.
 
+Note: Code may seem long but if you look closely the implementation is very short and simple. Since for each genre dataset and models has been trained separately the code looks long.
+
 Further work:
 Movie dataset can be divided into 80% train and 20% test data set and performance of the model can be measured.
