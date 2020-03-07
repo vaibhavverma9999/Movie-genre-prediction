@@ -31,19 +31,34 @@ Step 8 will give accuracy of each genre with respect to each genre datatype whic
 We have not computed the overall accuracy because of the unbalanced datatype problem.
 
 Accuracies for each genre obtained are:
-Drama: 71.42359093550262
-Comedy: 74.28720899816898
-Adventure: 77.02169625246549
-History: 80.14796547472255
-War: 85.9375
-Thriller: 77.31795567616463
-Crime: 78.35134053621448
-Fantasy: 76.75111773472429
-Horror: 84.69199557358908
-Family: 80.4604853764779
-Documentary: 85.883384480491
-Mystery: 75.3319357092942
-Romance: 74.48169951369337
-ScienceFiction: 84.51102317693612
-Action: 80.10977522216413
-Average accuracy of all genres:  79.1139116440406
+Drama:  71.42
+
+Comedy: 74.29
+
+Adventure: 77.02
+
+History: 80.15
+
+War: 85.94
+
+Thriller: 77.32
+
+Crime: 78.35
+
+Fantasy: 76.75
+
+Horror: 84.69
+
+Family: 80.46
+
+Documentary: 85.88
+
+Mystery: 75.33
+
+Romance: 74.48
+
+ScienceFiction: 84.51
+
+Action: 80.11
+
+Average accuracy of all genres:  79.11
