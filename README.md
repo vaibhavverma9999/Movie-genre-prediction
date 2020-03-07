@@ -44,7 +44,7 @@ Accuracies for each genre obtained are:
 11. Documentary: 85.88
 12. Mystery: 75.33
 13. Romance: 74.48
-14.ScienceFiction: 84.51
+14. ScienceFiction: 84.51
 15. Action: 80.11
 
 Average accuracy of all genres:  79.11
