@@ -32,33 +32,19 @@ We have not computed the overall accuracy because of the unbalanced datatype pro
 
 Accuracies for each genre obtained are:
 Drama:  71.42
-
 Comedy: 74.29
-
 Adventure: 77.02
-
 History: 80.15
-
 War: 85.94
-
 Thriller: 77.32
-
 Crime: 78.35
-
 Fantasy: 76.75
-
 Horror: 84.69
-
 Family: 80.46
-
 Documentary: 85.88
-
 Mystery: 75.33
-
 Romance: 74.48
-
 ScienceFiction: 84.51
-
 Action: 80.11
 
 Average accuracy of all genres:  79.11
