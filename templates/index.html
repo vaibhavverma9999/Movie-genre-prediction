@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Predictor</title>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+</head>
+<style>
+    body
+    {
+        background-image: url({{ url_for('static', filename='img/bg.jpg') }});
+        background-size: 100% 185%;
+        background-repeat: no-repeat;
+    }
+    .login
+    {
+    	margin-top: 5%;
+    	font-size: 30px;
+    }
+    h1
+    {
+        margin-top: -2%;
+        text-shadow: 2px 1px #644E11;
+        color: #E3BE59;
+        font-family: 'Rockwell', "Times New Roman";
+    }
+    #plot
+    {
+        padding: 10px;
+        width: 40%;
+        border: 1px solid #E3BE59;
+        border-radius: 7px;
+        font-size: 14px;
+        height: 100px;
+        box-sizing: border-box;
+        resize: none;
+    }
+    .button
+    {
+        margin-top: 1%;
+        margin-bottom: -2%;
+        width: 10%;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: #E3BE59;
+    }
+    .predict
+    {
+        font-size: 20px;
+        margin-top: -50px;
+        position: fixed;
+        margin-left: 38%;
+    }
+    li
+    {
+        display: inline;
+        float: center;
+    }
+    #myProgress
+    {
+        width: 40%;
+        background-color: #ddd;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid #E3BE59;
+    }
+    #myBar
+    {
+        width: 1%;
+        height: 30px;
+        background-color: #E3BE59;
+    }
+</style>
+<body>
+ <div class="login">
+     <center><h1>Movie Genre Predictor</h1>
+     <!--<img src="{{ url_for('static', filename='images/bg1.jpg') }}", alt="">-->
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+        <textarea id="plot" type="textarea" name="plot" placeholder="Enter your movie subplot here..." autofocus="autofocus" maxlength="600" minlength="100" required="required"></textarea>
+        <br>
+        <button type="submit" class="button" onclick="move()">Predict</button>
+    </form>
+     </center>
+         <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+         <script>
+            var i = 0;
+            function move() {
+              if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("myBar");
+                var width = 1;
+                var id = setInterval(frame, 150);
+                function frame() {
+                  if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                  } else {
+                    width++;
+                    elem.style.width = width + "%";
+                  }
+                }
+              }
+            }
+        </script>
+
+   <br>
+   <br>
+     <div class="predict">
+         <center>Possible genres of the provided subplot<br>
+        |{%for i in genre_ans%}
+            <l1>{{i}} | </l1>
+             {%endfor%}</center>
+
+     </div>
+ </div>
+</body>
+</html>
