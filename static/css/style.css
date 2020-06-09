@@ -1,0 +1,65 @@
+body
+    {
+        background-image: url({{ url_for('static', filename='img/bg.jpg') }});
+        background-size: 100% 185%;
+        background-repeat: no-repeat;
+    }
+    .login
+    {
+    	margin-top: 5%;
+    	font-size: 30px;
+    }
+    h1
+    {
+        margin-top: -2%;
+        text-shadow: 2px 1px #644E11;
+        color: #E3BE59;
+        font-family: 'Rockwell', "Times New Roman";
+    }
+    #plot
+    {
+        padding: 10px;
+        width: 40%;
+        border: 1px solid #E3BE59;
+        border-radius: 7px;
+        font-size: 14px;
+        height: 100px;
+        box-sizing: border-box;
+        resize: none;
+    }
+    .button
+    {
+        margin-top: 1%;
+        margin-bottom: -2%;
+        width: 10%;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: #E3BE59;
+    }
+    .predict
+    {
+        font-size: 20px;
+        margin-top: -50px;
+        position: fixed;
+        margin-left: 38%;
+    }
+    li
+    {
+        display: inline;
+        float: center;
+    }
+    #myProgress
+    {
+        width: 40%;
+        background-color: #ddd;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid #E3BE59;
+    }
+    #myBar
+    {
+        width: 1%;
+        height: 30px;
+        background-color: #E3BE59;
+    }
