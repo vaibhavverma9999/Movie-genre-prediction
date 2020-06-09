@@ -6,6 +6,18 @@ Tools used:
 1. Python
 2. ScikitLearn libraries
 3. Numpy
+4. Natural Language Processing
+5. Machine Learning
+6. Flask API
+
+Screenshot:
+![Capture](https://user-images.githubusercontent.com/29058362/84123872-0ec72e80-aa58-11ea-9236-329f5673f69c.JPG)
+
+How to run:
+1. Run the model.py. This will create pickle files for the model.
+2. Then host the model on localhost using PyCharm.
+3. Open the project on PyCharm and run the code.
+4. A localhost link will be generated like(http://127.0.0.1:5000/). Click on this link and the model is ready to run.
 
 Method:
 1. Import the movie dataset into the python notebook.
@@ -19,7 +31,7 @@ Note: Code may seem long but if you look closely the implementation is very shor
 
 For each genre we have done the following steps:
 1. Lets assume our genre is Drama.
-2. Prepare movie plots in Drama_data and output of movie plot in Drama_out. Ratio maintained for each movie of the genre to movie not of that genre is 1:1.9. This is the most crucial step of this model and takes much more time than any other step. 1:1.9 is chosen after trial and error method to obtain the optimum accuracy possible.
+2. Prepare movie plots in Drama_data and output of movie plot in Drama_out. Ratio maintained for each movie of the genre to movie not of that genre is 1:2.3. This is the most crucial step of this model and takes much more time than any other step. 1:1.9 is chosen after trial and error method to obtain the optimum accuracy possible.
 3. Preprocess Drama_data. In this step we remove special characters.
 4. Convert both Drama_data and Drama_out to numpy array.
 5. Drama_data is tfidf vectorized and stored in X_Drama. Drama_out is stored to Y_Drama.
