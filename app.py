@@ -2,7 +2,7 @@ import pickle
 
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-from sklearn.externals import joblib
+import joblib
 
 app = Flask(__name__)
 Drama = pickle.load(open('Drama.pickle', 'rb'))
